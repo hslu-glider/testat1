@@ -16,15 +16,17 @@
 
 * Sie können prinzipiell die Bildschirmausgabe in Windowsystemen erklären.
 
-    * Jede Component (Button usw.) hat eine Methode `pain(Graphics g)` zum Zeichnen der Komponente
-    * Das Fenstersystem ruft die Methode `paint()` automatisch auf
+    * Jede Component (Button usw.) hat eine Methode `public void paint(Graphics g)` zum Zeichnen der Komponente
+    * Das Fenstersystem ruft die Methode `paint()` automatisch auf (z.B. bei einer Änderung der Fensterfgrösse)
     * Ein Java-programm kann ein neuzeichnen forcieren mit `repaint()` (was schlussendlich ein `paint()` ausführt) 
 
-    
-
-        repaint
-
 * Sie kennen die Merkmale eines sequentiellen und eines ereignisgesteuerten Programms.
+
+    | Sequentiell                       | Ereignisgesteuert             |
+    |-----------------------------------|-------------------------------|
+    | Aneinanderreihung von Anweisungen | Idle im Normalfall            |
+    | Fester Programmablauf             | Wake-Up bei Event             |
+    |                                   | Ablauf häbngt von Event ab    |
 
     * Sequentiell: Aneinanderreihung von Befehlen (Bsp.: SBB Billetautomat)
     * Ereignisgesteuert: Erst bei Ereignis werden Befehle ausgeführt (Bsp.: Games)
