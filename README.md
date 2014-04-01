@@ -8,7 +8,7 @@
 
 * Sie können einen schwergewichtigen Nachteil der Vererbung erläutern
 
-    Starke Kopplung
+    * Starke Kopplung
 
 * Sie können Substitution und Casting korrekt anwenden.
 * Sie können zwischen statischen und dynamischen Typen unterscheiden.
@@ -20,16 +20,19 @@
 
 # Java
 * Sie wissen, wie toString() arbeitet und angepasst werden kann.
- ** Name der Klasse \@ Speicheradresse im Heap
- ** Kann überschrieben werden. 
+
+    * Name der Klasse \@ Speicheradresse im Heap
+    * Kann überschrieben werden. 
 * Sie verstehen das Konzept von abstrakten Klassen und abstrakten Methoden und können diese einsetzen.
- ** Von abstrakten Klassen können keine Objekte instanziert werden.
- ** Klassen, die von akstrakten Klassen abgeleitet werden müssen alle Methoden dieser Klasse implementieren oder sind selbst auch abstrakt.
- ** Kein Konstruktor
+
+    * Von abstrakten Klassen können keine Objekte instanziert werden.
+    * Klassen, die von akstrakten Klassen abgeleitet werden müssen alle Methoden dieser Klasse implementieren oder sind selbst auch abstrakt.
+    * Kein Konstruktor
+
 * Sie kennen Java spezifische Eigenschaften der Vererbung.
- ** Keine Mehrfachvererbung von Klassen
+    * Keine Mehrfachvererbung von Klassen
 * Sie können erläutern, wozu Simulationen verwendet werden können.
- ** Um Vorgänge nachzubilden
+    * Um Vorgänge nachzubilden
 * Sie können ein Java Interface definieren.
 
     public interface NameDesInterfaces(){}
