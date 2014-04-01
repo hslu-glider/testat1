@@ -12,8 +12,6 @@
 
 * Sie können Substitution und Casting korrekt anwenden.
 
-    * Substitution
-
         public void printName(Animal a){
                 System.out.println(a.name)
         }
