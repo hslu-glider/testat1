@@ -34,18 +34,18 @@
             
 
 * Sie können zwischen statischen und dynamischen Typen unterscheiden.
-        * Statische Typen
-        Statische Datentype werden bei der Kompilierung und nicht zur Laufzeit festgelegt.
+    * Statische Typen
+    Statische Datentype werden bei der Kompilierung und nicht zur Laufzeit festgelegt.
                 
-                Konto k;
+            Konto k;
 
-        * Dynamische Typen
-        Dynamische Datentypen werden werden bei der Ausführung definiert, also zur Laufzeit.
+    * Dynamische Typen
+    Dynamische Datentypen werden werden bei der Ausführung definiert, also zur Laufzeit.
 
                 ...
-                k = new Konto();
-                k = new Spare();
-                k = new Giro();
+            k = new Konto();
+            k = new Spare();
+            k = new Giro();
                 ...
 
 * Sie können bestimmen, welche Implementation für einen bestimmten Methodenaufruf zur Ausführung gelangt.
