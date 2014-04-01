@@ -23,6 +23,7 @@
 
     * Name der Klasse \@ Speicheradresse im Heap
     * Kann überschrieben werden. 
+
 * Sie verstehen das Konzept von abstrakten Klassen und abstrakten Methoden und können diese einsetzen.
 
     * Von abstrakten Klassen können keine Objekte instanziert werden.
@@ -30,12 +31,16 @@
     * Kein Konstruktor
 
 * Sie kennen Java spezifische Eigenschaften der Vererbung.
+
     * Keine Mehrfachvererbung von Klassen
+
 * Sie können erläutern, wozu Simulationen verwendet werden können.
+
     * Um Vorgänge nachzubilden
+
 * Sie können ein Java Interface definieren.
 
-    public interface NameDesInterfaces(){}
+        public interface NameDesInterfaces(){}
 
 * Sie können ein Java Interface in abgeleiteten Klassen implementieren.
         
