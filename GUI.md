@@ -22,11 +22,12 @@
 
 * Sie kennen die Merkmale eines sequentiellen und eines ereignisgesteuerten Programms.
 
-    | Sequentiell                       | Ereignisgesteuert             |
+    | Sequentielle Programme            | Ereignisgesteuerte Programme  |
     |-----------------------------------|-------------------------------|
     | Aneinanderreihung von Anweisungen | Idle im Normalfall            |
-    | Fester Programmablauf             | Wake-Up bei Event             |
-    |                                   | Ablauf häbngt von Event ab    |
+    | (Wake-Up durch bestimmte Eingabe) | Wake-Up bei Event             |
+    | Fester Programmablauf             | Ablauf häbngt von Event ab    |
+    | Bsp.: Billet und Selecta Automat  | Bsp.: Typische GUI-Anwendung  |
 
     * Sequentiell: Aneinanderreihung von Befehlen (Bsp.: SBB Billetautomat)
     * Ereignisgesteuert: Erst bei Ereignis werden Befehle ausgeführt (Bsp.: Games)
