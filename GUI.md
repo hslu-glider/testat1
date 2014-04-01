@@ -5,6 +5,7 @@
     |-------------------|-----------|----------------|
     | Label             | Frame     | GridLayout     |
     | Button            | Applet    | FlowLayout     |
+    | Textbox           | Dialog    | BoxLayout      |
 
 * Sie können prinzipiell den Aufbau eines GUI erklären.
 
