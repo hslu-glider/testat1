@@ -1,15 +1,11 @@
 # GUI Programmierung
 * Sie können mindestens je 2 elementare GUI - Komponenten, Container und Layout - Manager benennen und identifizieren.
 
-    * Label
-    * Button
-    * textfield
-    * checkbox
-    * scrollbar
-    * list
-    * choice
-    * texarea
- 
+    | GUI-Komponente    | Container | Layout-Manager |
+    |-------------------|-----------|----------------|
+    | Label             | Frame     | GridLayout     |
+    | Button            | Applet    | FlowLayout     |
+
 * Sie können prinzipiell den Aufbau eines GUI erklären.
 
     * ???
