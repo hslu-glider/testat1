@@ -39,7 +39,20 @@
     * Die Listener haben Methoden die bereitstehen um das Event zu verarbeiten
     * Diese bereitstehenden Methoden werden ausgeführt
 
-* Sie können ein einfaches Java - Programm mit GUI (AWT) und Event - Handling analysieren und implementieren.  
+* Sie können ein einfaches Java-Programm mit GUI (AWT) und Event-Handling analysieren und implementieren.
+
+    Main.java
+
+            public class Main {
+                public static void main(String[] args){
+                    
+                    // create the GUI
+                    Calculator cal = new Calculator();
+                    
+                    // start the ButtonListener.
+                    ButtonListener bl = new ButtonListener(cal);
+                }
+            }
    
 * Sie kennen Vor - und Nachteile von Swing und wissen, wie man graphische User-Interfaces mit Swing erzeugt.
 
