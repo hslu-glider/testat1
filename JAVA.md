@@ -33,7 +33,9 @@
 	* Abstrakte Methoden haben keinen Methodenrumpf (body).
 	* Abstrakte Methoden machen auch die Klasse abstrakt.
 	* Beispiel einer abstrakten Methode:
-		public abstract void doSomething(int someIntegerParameter);
+	
+			public abstract void doSomething(int someIntegerParameter);
+		
     * Von abstrakten Klassen können keine Objekte instanziert werden.
     * Die Implementation wird in konkreten Unterklassen realisiert.
     * Unterklassen können durch Überschreiben (@override) der abstrakten Methoden konkret (instanziierbar) werden.
