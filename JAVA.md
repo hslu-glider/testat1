@@ -21,13 +21,13 @@
 	* Gibt wie oben zu sehen den Namen der Klasse welche aus der \@ Speicheradresse im Heap zusammengestellt wird.
     * Kann überschrieben werden. Bsp:
 		
-			```Java
-			@override 
-			public String toString()
-			{
-				return "z.B Name des Objektes hier angeben";
-			}
-			```
+```Java
+@override 
+public String toString()
+{
+	return "z.B Name des Objektes hier angeben";
+}
+```
 
 * Sie verstehen das Konzept von abstrakten Klassen und abstrakten Methoden und können diese einsetzen.
 
