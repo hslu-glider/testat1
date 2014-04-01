@@ -16,9 +16,11 @@
 
 * Sie können prinzipiell die Bildschirmausgabe in Windowsystemen erklären.
 
-        paint()
+    * Jede Component (Button usw.) hat eine Methode `pain(Graphics g)` zum Zeichnen der Komponente
+    * Das Fenstersystem ruft die Methode `paint()` automatisch auf
+    * Ein Java-programm kann ein neuzeichnen forcieren mit `repaint()` (was schlussendlich ein `paint()` ausführt) 
 
-    und
+    
 
         repaint
 
