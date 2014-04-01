@@ -12,14 +12,21 @@
 
 * Sie können Substitution und Casting korrekt anwenden.
 
-        public void printName(Animal a){
-                System.out.println(a.name)
-        }
-        ...
-        public static void main(String[] args){
-                ...
-                myDog.printName();
-                myCat.printName();
+    * Substitution
+
+            public void printName(Animal a){
+                    System.out.println(a.name)
+            }
+            ...
+            public static void main(String[] args){
+                    ...
+                    myDog.printName();
+                    myCat.printName();
+
+    * Casting
+
+            
+    
 
 * Sie können zwischen statischen und dynamischen Typen unterscheiden.
 * Sie können bestimmen, welche Implementation für einen bestimmten Methodenaufruf zur Ausführung gelangt.
