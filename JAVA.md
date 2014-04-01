@@ -8,8 +8,9 @@
 		The result should be a concise but informative representation that is easy for a person to read. 
 		It is recommended that all subclasses override this method.
 
-		The toString method for class Object returns a string consisting of the name of the class of which the object is an instance, 
-		the at-sign character `@', and the unsigned hexadecimal representation of the hash code of the object. 
+		The toString method for class Object returns a string consisting of the name of the class 
+		of which the object is an instance, the at-sign character `@', 
+		and the unsigned hexadecimal representation of the hash code of the object. 
 		In other words, this method returns a string equal to the value of:
 
 		getClass().getName() + '@' + Integer.toHexString(hashCode())
@@ -55,19 +56,48 @@
 
 * Sie können erläutern, wozu Simulationen verwendet werden können.
 
-    * Um Vorgänge nachzubilden
+    * Programme werden oft verwendet, um reale Systeme zu simulieren
+	* Simulationen betreffen oft nur einen Teil des realen Systems
+	* Simulationen enthalten Vereinfachungen
+		* Grössere Detailtreue kann genauere Resultate liefern.
+		* Grössere Detailtreue verlangt nach mehr Ressourcen.
+	* Validierung durch Messungen notwendig
+	* Anwendungsbereiche:
+		* Vorhersagen (Wetterprognosen, Funktionsnachweise etc.)
+		* Experimente ("Unmögliche" und gefährliche Experimente werden möglich)
+		
 
 * Sie können ein Java Interface definieren.
 
-        public interface NameDesInterfaces(){}
+        public interface Drawable()
+		{
+			//alle Felder eines Interfaces sind public static final (also Konstanten, Schlüsselwörter können entfallen)
+			
+			//Keine Konstruktoren erlaubt
+			
+			void draw(); //Einträge sind autom. public abstract (die entsprechenden Schlüsselwörter können entfallen)
+			void resize(int value);
+		}
 
 * Sie können ein Java Interface in abgeleiteten Klassen implementieren.
         
-        @override
+		public class House implements Drawable
+		{
+			//instance variables
+			
+			public House(){...}
+			public void draw() {...}
+			public void resize(int value){...}
+			
+			//other methods
+		}
 
-* Sie kennen Unterschiede zwischen konkreten und abstrakten Klassen sowie zwischen abstrakten Klassen und Interfaces.      
+* Sie kennen Unterschiede zwischen konkreten und abstrakten Klassen sowie zwischen abstrakten Klassen und Interfaces.
+
+	* Von abstrakten Klassen können im gegensatz zu konkreten Klassen keine Objekte instanziiert werden.
+	* Abstrakte Klassen können Implementationen enthalten, Interfaces nicht.
+	* Interfaces können ebenfalls nicht instanziiert werden.
+	
 * Sie wissen, wie Sie in Java Mehrfachvererbung umsetzen können.      
 * Sie wissen, wozu man Interfaces verwendet.      
 * Sie verstehen das Konzept der inneren Klassen und können dieses für die Implementierung ereignisgesteuerter Java - Applikationen einsetzen. 
-
-    * Eventhandler
