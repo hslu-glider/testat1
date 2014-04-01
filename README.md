@@ -70,6 +70,8 @@
 
         paint()
 
+    und
+
         repaint
 
 * Sie kennen die Merkmale eines sequentiellen und eines ereignisgesteuerten Programms.
