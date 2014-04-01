@@ -92,11 +92,12 @@
     * Nachteile:
         * Ressourcenintensiv
 
-* Sie kennen wichtige Komponenten von Swing und deren Einsatzmöglichkeit. \\
-        J... von AWT\\
-        JRadiobutton \\
-        JCombobox \\
-        JRootPane
+* Sie kennen wichtige Komponenten von Swing und deren Einsatzmöglichkeit.
+
+    * J... von AWT
+    * JRadiobutton
+    * JCombobox
+    * JRootPane
 
 \section{Datenstrukturen}
 \begin{itemize}
