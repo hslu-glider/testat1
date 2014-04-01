@@ -96,8 +96,77 @@
 
 	* Von abstrakten Klassen können im gegensatz zu konkreten Klassen keine Objekte instanziiert werden.
 	* Abstrakte Klassen können Implementationen enthalten, Interfaces nicht.
-	* Interfaces können ebenfalls nicht instanziiert werden.
+	* Interfaces können ebenfalls nicht instanziiert werden. 
 	
-* Sie wissen, wie Sie in Java Mehrfachvererbung umsetzen können.      
-* Sie wissen, wozu man Interfaces verwendet.      
+* Sie wissen, wie Sie in Java Mehrfachvererbung umsetzen können
+
+	* Java erlaubt keine Mehrfachvererbung von Klassen
+	* Interfaces jedoch beherrschen das Konzept von Mehrfachvererbung
+	* Beispiel zu Erben von einer Klasse und Implementierung eines Interfaces:
+	
+			public class MyClass extends BaseClass implements MyInterface {...}
+			
+	* Beispiel zur Implementierung von mehreren Interfaces:
+	
+			public class MyClass2 implements MyInterface, MyInterface2 {...}
+			
+	* Beispiel zu Erben von einer Klasse und Implementierung mehrerer Interfaces:
+	
+			public class MyClass3 extends BaseClass implements MyInterface, MyInterface2 {...}
+			
+* Sie wissen, wozu man Interfaces verwendet.
+
+	* Ein Interface spezifiert ein Verhalten (Menge von Methodenköpfen) ohne Implementation zu beinhalten (nur das WAS)
+	* Ein Interface beinhaltet keinen Konstruktor und kann daher auch nicht instanziiert werden
+	
 * Sie verstehen das Konzept der inneren Klassen und können dieses für die Implementierung ereignisgesteuerter Java - Applikationen einsetzen. 
+
+	* innere Klasse: Die Klasse wird in eine andere Klasse hinein genommen.
+	* Beispiel für die Implementation einer inneren Klasse mit Ereignissteuerung:
+	
+			public class InnerClassDemo extends JFrame
+			{
+				private JButton button1; //Instanzvariable button1 vom Typ JButton
+				
+				public InnerClassDemo() //Konstruktor
+				{
+					button1 = new JButton("Drück mich"); //Initialisierung des Buttons
+					button1.addActionListener( new MyActionListener() ); //Hinzufügen des ActionListeners mit Aufruf der inneren Klasse
+					add(button1); //Hinzufügen des Buttons zum JFrame
+				}
+				
+				//Hier nun die eigentliche Implementierung der Inneren-Klasse MyActionListener
+				private class MyActionListener implements ActionListener
+				{
+					public void actionPerformed(ActionEvent e)
+					{
+						button1.setText("Ich wurde gedrückt");
+					}
+				}
+			}
+			
+	* anonyme innere Klasse: Ein namenloses Objekt einer namenlosen Klasse wird direkt beim Anmelden des Listeners erzeugt
+		* vereinfachte Variante der inneren Klasse
+		* bei langen Ereignis-Handlern unübersichtlich
+	* Beispiel für die Implementation einer anonymen inneren Klasse mit Ereignissteuerung
+	
+			public class AnonymousClassDemo extends JFrame
+			{
+				public AnonymousClassDemo()
+				{
+					JButton button1 = new JButton("Drück mich");
+					button1.addActionListener(
+						//Die anonyme Innere-Klasse wird hier implementiert
+						new ActionListener()
+						{
+							public void actionPerformed(ActionEvent e)
+							{
+								button1.setText("Ich wurde gedrückt");
+							}
+						}
+						//Ende der Implementation
+					);
+					add(button1);
+				}
+			}
+			
