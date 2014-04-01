@@ -20,10 +20,11 @@
 	* Gibt wie oben zu sehen den Namen der Klasse welche aus der \@ Speicheradresse im Heap zusammengestellt wird.
     * Kann überschrieben werden. Bsp:
 		
-		@override 
-		public String toString(){
-			return "z.B Name des Objektes hier angeben";
-		}
+			@override 
+			public String toString()
+			{
+				return "z.B Name des Objektes hier angeben";
+			}
 
 * Sie verstehen das Konzept von abstrakten Klassen und abstrakten Methoden und können diese einsetzen.
 
@@ -38,15 +39,15 @@
 	* Es gibt abstrakte Klassen die keine abstrakten Methoden enthalten.
 	* Beispiel einer abstrakten Klasse:
 		
-		public abstract class Item
-		{
-			public Item(String theTitel)
-			{...}
-			public void setComment(String comment)
-			{...}
-			public String getComment()
-			{...}
-		}
+			public abstract class Item
+			{
+				public Item(String theTitel)
+				{...}
+				public void setComment(String comment)
+				{...}
+				public String getComment()
+				{...}
+			}
 
 * Sie kennen Java spezifische Eigenschaften der Vererbung.
 
