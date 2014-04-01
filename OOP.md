@@ -34,6 +34,18 @@
             
 
 * Sie können zwischen statischen und dynamischen Typen unterscheiden.
+        * Statische Typen
+        Statische Datentype werden bei der Kompilierung und nicht zur Laufzeit festgelegt.
+                
+                Konto k;
+
+        * Dynamische Typen
+        Dynamische Datentypen werden werden bei der Ausf�hrung definiert, also zur Laufzeit.
+
+                k = new Konto();
+                k = new Spare();
+                k = new Giro();
+
 * Sie können bestimmen, welche Implementation für einen bestimmten Methodenaufruf zur Ausführung gelangt.
 * Sie können Polymorphie, d.h. Überladen und Überschreiben mittels Java - Code erklären und anwenden.
 * Sie können Einfach - und Mehrfachvererbung erläutern und können diese im Klassendiagramm darstellen.
