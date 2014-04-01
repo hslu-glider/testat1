@@ -25,6 +25,12 @@
 
     * Casting
 
+            public static void main(String[] args) {
+                    ....
+                    Animal myPet = new Dog();
+                    Dog myDog = (Dog) myPet;
+                    ...
+            }
             
 
 * Sie können zwischen statischen und dynamischen Typen unterscheiden.
