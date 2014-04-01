@@ -54,6 +54,37 @@
                 }
             }
 
+    Calculator.java
+
+            public class Calculator extends Frame implements WindowListener {
+                    Button btn_Start = new Button("Start");
+                    Button btn_End = new Button("End");
+                    ...
+                    GridLayout gl = new GridLayout(5, 4);
+                    Panel keyboard = new Panel(gl);
+                    ...
+                    public Calculator(){
+                        super("hslu-gliders' GUI");
+                        ...
+                        setSize(HEIGTH, LENGTH);
+                        setResizable(false);
+                        ...
+                        setLayout(new BorderLayout());
+                        ...
+                        keyboard.add(btn_Start);
+                        keyboard.add(btn_End);
+                        ...
+                        add(keyboard, BorderLayout.CENTER);
+                        ...
+                        addWindowListener(this);
+                        ...
+                        ButtonListener bl = new ButtonListener(this);
+                        btn_Start.addActionListener(bl);
+                        btn_End.addActionListener(bl);
+                        ...
+                        setVisible(true);
+                            
+
     ButtonListener.java
 
             public class ButtonListener implements ActionListener{
