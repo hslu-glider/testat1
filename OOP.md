@@ -1,16 +1,16 @@
 # Objektorientierte Programmierung
-* Sie kÃ¶nnen mindestens 3 Vorteile der Vererbung erklÃ¤ren
+* Sie können mindestens 3 Vorteile der Vererbung erklären
 
     * Einfache Wiederverwendung (von Implementation)
     * Vermeidung von Code-Duplikation
     * Einfachere Wartbarkeit
     * Einfachere Erweiterbarkeit
 
-* Sie kÃ¶nnen einen schwergewichtigen Nachteil der Vererbung erlÃ¤utern
+* Sie können einen schwergewichtigen Nachteil der Vererbung erlÃ¤utern
 
     * Starke Kopplung
 
-* Sie kÃ¶nnen Substitution und Casting korrekt anwenden.
+* Sie können Substitution und Casting korrekt anwenden.
 
     * Substitution
 
@@ -33,7 +33,7 @@
             }
             
 
-* Sie kÃ¶nnen zwischen statischen und dynamischen Typen unterscheiden.
+* Sie können zwischen statischen und dynamischen Typen unterscheiden.
         * Statische Typen
         Statische Datentype werden bei der Kompilierung und nicht zur Laufzeit festgelegt.
                 
@@ -48,8 +48,8 @@
                 k = new Giro();
                 ...
 
-* Sie kÃ¶nnen bestimmen, welche Implementation fÃ¼r einen bestimmten Methodenaufruf zur AusfÃ¼hrung gelangt.
-* Sie kÃ¶nnen Polymorphie, d.h. Ãœberladen und Ãœberschreiben mittels Java - Code erklÃ¤ren und anwenden.
-* Sie kÃ¶nnen Einfach - und Mehrfachvererbung erlÃ¤utern und kÃ¶nnen diese im Klassendiagramm darstellen.
+* Sie können bestimmen, welche Implementation für einen bestimmten Methodenaufruf zur Ausführung gelangt.
+* Sie können Polymorphie, d.h. Überladen und Überschreiben mittels Java - Code erklären und anwenden.
+* Sie können Einfach - und Mehrfachvererbung erläutern und können diese im Klassendiagramm darstellen.
 * Sie kennen Kriterien des modularen Entwurfs.
 * Sie kennen die Prinzipien des modularen Entwurfs.
