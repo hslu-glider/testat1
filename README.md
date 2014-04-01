@@ -1,9 +1,11 @@
 # Objektorientierte Programmierung
 1. Sie können mindestens 3 Vorteile der Vererbung erklären
+
 ..*Einfache Wiederverwendung (von Implementation)
 ..* Vermeidung von Code-Duplikation
 ..* Einfachere Wartbarkeit
 ..* Einfachere Erweiterbarkeit
+
 2. Sie können einen schwergewichtigen Nachteil der Vererbung erläutern
 ..* Starke Kopplung
 3. Sie können Substitution und Casting korrekt anwenden.
