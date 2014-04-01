@@ -1,18 +1,8 @@
 # Objektorientierte Programmierung
+Hier sind die Lernziele aufgelistet mit kurzen Kommentaren dazu.
 
-# Java
-[Java](JAVA.md)
-
-# GUI Programmierung
-[GUI Programmierung](GUI.md)
-
-# Datenstrukturen
-
-## Allgemeines zu Datenstrukturen
-[Datenstrukturen Allgemeines](DAT-general.md) 
-
-## Bäume
-[Datenstrukturen Bäume](DAT-trees.md)
-
-## Methoden
-[Datenstrukturen Methoden](DAT-methods.md)
+* [Java](JAVA.md)
+* [GUI Programmierung](GUI.md)
+* [Datenstrukturen Allgemeines](DAT-general.md) 
+* [Datenstrukturen Bäume](DAT-trees.md)
+* [Datenstrukturen Methoden](DAT-methods.md)
