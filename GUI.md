@@ -38,14 +38,7 @@
     | Vorteile                            | Nachteile          |
     |-------------------------------------|--------------------|
     | Sieht auf allen Systemen gleich aus | Ressourcenintensiv |
-    | Braucht keine Systembibliotheken    |                    |
-
-
-    * Vorteile: 
-        * Sieht auf allen Systemen gleich aus
-        * Braucht keine Systembibliotheken 
-    * Nachteile:
-        * Ressourcenintensiv
+    | Braucht keine Systembibliotheken    | -                  |
 
 * Sie kennen wichtige Komponenten von Swing und deren Einsatzmöglichkeit.
 
