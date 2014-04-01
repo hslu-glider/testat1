@@ -9,7 +9,10 @@
 
 * Sie können prinzipiell den Aufbau eines GUI erklären.
 
-    * ???
+    GUIs bestehen aus drei Grundlegenden Systemkomponenten 
+    * elementare GUI Komponenten (Label, Button usw.)
+    * Container (unsichtbare wie Panel und sichtbare wie Frame)
+    * Layout-Manager (dieser arrangiert Container-Inhalte z.B. Buttons)
 
 * Sie können prinzipiell die Bildschirmausgabe in Windowsystemen erklären.
 
