@@ -49,10 +49,29 @@
                     // create the GUI
                     Calculator cal = new Calculator();
                     
-                    // start the ButtonListener.
+                    // start the ButtonListener
                     ButtonListener bl = new ButtonListener(cal);
                 }
             }
+
+    ButtonListener.java
+
+            public class ButtonListener implements ActionListener{
+                private Calculator gui;
+                private Computer cp = new Computer();
+
+                public ButtonListener(Calculator gui){
+                    this.gui = gui;
+                }
+
+                public void actionPerformed(ActionEvent event){
+                if(event.getSource() == gui.btn_Start){
+                    cp.doStart();
+                }
+                ...
+                if(event.getSource() == gui.btn_End){
+                    cp.doEnd();
+                }
    
 * Sie kennen Vor - und Nachteile von Swing und wissen, wie man graphische User-Interfaces mit Swing erzeugt.
 
