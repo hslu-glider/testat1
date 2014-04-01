@@ -29,12 +29,15 @@
     | Fester Programmablauf             | Ablauf häbngt von Event ab    |
     | Bsp.: Billet und Selecta Automat  | Bsp.: Typische GUI-Anwendung  |
 
-    * Sequentiell: Aneinanderreihung von Befehlen (Bsp.: SBB Billetautomat)
-    * Ereignisgesteuert: Erst bei Ereignis werden Befehle ausgeführt (Bsp.: Games)
-
 * Sie können das Zusammenspiel zwischen Event-Quelle und Event-Listener erklären. 
 
-    * Eventlistener registriert sich bei Eventquelle und wird bei einem entsprechenden Ereignis benachrichtigt
+    * EventSource (z.B. Button) unterhält eine List mit interessierten EventListener
+    * d.h. EventListener registrieren sich bei Eventquellen
+
+    Bei einem eintreffendem Event geschieht folgendes: 
+    * Die EventSource (z.B. Button) leitet das Event weiter an registriete Listener
+    * Die Listener haben Methoden die bereitstehen um das Event zu verarbeiten
+    * Diese bereitstehenden Methoden werden ausgeführt
 
 * Sie können ein einfaches Java - Programm mit GUI (AWT) und Event - Handling analysieren und implementieren.  
    
