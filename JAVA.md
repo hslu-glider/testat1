@@ -1,5 +1,6 @@
 # Java
 * Sie wissen, wie toString() arbeitet und angepasst werden kann.
+		
 		public String toString()
 
 		Returns a string representation of the object. 
@@ -18,6 +19,7 @@
 		
 	* Gibt wie oben zu sehen den Namen der Klasse welche aus der \@ Speicheradresse im Heap zusammengestellt wird.
     * Kann überschrieben werden. Bsp:
+		
 		@override 
 		public String toString(){
 			return "z.B Name des Objektes hier angeben";
@@ -35,6 +37,7 @@
     * Unterklassen können durch Überschreiben (@override) der abstrakten Methoden konkret (instanziierbar) werden.
 	* Es gibt abstrakte Klassen die keine abstrakten Methoden enthalten.
 	* Beispiel einer abstrakten Klasse:
+		
 		public abstract class Item
 		{
 			public Item(String theTitel)
