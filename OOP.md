@@ -51,7 +51,38 @@
                 ...
 
 * Sie können bestimmen, welche Implementation für einen bestimmten Methodenaufruf zur Ausführung gelangt.
+	
+	
 * Sie können Polymorphie, d.h. Überladen und Überschreiben mittels Java - Code erklären und anwenden.
-* Sie können Einfach - und Mehrfachvererbung erläutern und können diese im Klassendiagramm darstellen.
+	
+	* Überladung
+		Überladene Funktionen oder Konstruktoren erkennt man, dass sie den selben Namen haben, jedoch 
+		unterschiedliche Parameter in bezug auf Anzahl, Art und Reihenfolge. (schwache Polymorphie)
+				
+				...
+				public void print(){
+				}
+				...
+				public void print(int space){
+				}
+				...
+				
+	* Überschreiben
+		In abgeleiteten Klassen können Methoden der Oberklasse bei Bedarf verändert (Überschrieben) werden.
+		Welche Methode verwendet wird hängt von der Klasse selbst ab.
+		
+				Konto konto2 = new Konto();
+				konto2.print(); // Es wird die print Methode von Konto ausgeführt.  
+				
+				Giro giro2 = new giro();
+				giro2.print(); // Es wird die print Methode von Giro ausgeführt. 
+		
+				konto2 = giro2;
+				konto2.print(); // konto2 ist jetzt ein Giro konto und kennt die print funktion von Giro.
+				//die suche nach der Methode Giro startet bei der untersten abgeleiteten Kalsse und endet,
+				//sobald die erste methode mit diesem Namen und paramtern gefunden wurde.
+
+				* Sie können Einfach - und Mehrfachvererbung erläutern und können diese im Klassendiagramm darstellen.
+
 * Sie kennen Kriterien des modularen Entwurfs.
 * Sie kennen die Prinzipien des modularen Entwurfs.
