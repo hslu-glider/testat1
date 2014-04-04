@@ -92,9 +92,12 @@
  
 * Sie können für Array und Liste den Aufwand für die elementaren Zugriffsoperationen angeben.
 
-    | Datenstruktur | Einfügen | Suchen    | Entfernen | Nachfolger    | Vorgänger | sortierte Ausgabe |
-    |-------------- |----------|-----------|-----------|---------------|-----------|-------------------| 
-    | testing       |          |           |           |               |           |                   |
+    | Datenstruktur     | Einfügen  | Suchen    | Entfernen | Nachfolger    | Vorgänger | sortierte Ausgabe |
+    |-------------------|-----------|-----------|-----------|---------------|-----------|-------------------| 
+    | Array unsortiert  | *O(1)*    | *O(n)*    | *O(n)*    | nein          | nein      | nein              |
+    | Array sortiert    | *O(n)*    | *O(log n)*| *O(n)*    | ja            | ja        | ja                |
+    | Liste unsoertiert | *O(1)*    | *O(n)*    | *O(n)*    | nein          | nein      | nein              |
+    | Liste sortiert    | *O(n)*    | *O(n)*    | *O(n)*    | ja            | nein      | ja                |
  
 * Sie können die Implementierung einer einfachen Liste im Detail verstehen und illustrieren. 
 * Sie können eine einfache Liste selber implementieren. 
