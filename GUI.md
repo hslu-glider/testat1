@@ -9,7 +9,7 @@
 
 * Sie können prinzipiell den Aufbau eines GUI erklären.
 
-    GUIs bestehen aus drei Grundlegenden Systemkomponenten 
+    GUIs bestehen aus drei grundlegenden Systemkomponenten 
     * elementare GUI Komponenten (Label, Button usw.)
     * Container (unsichtbare wie Panel und sichtbare wie Frame)
     * Layout-Manager (dieser arrangiert Container-Inhalte z.B. Buttons)
@@ -26,7 +26,7 @@
     |-----------------------------------|-------------------------------|
     | Aneinanderreihung von Anweisungen | Idle im Normalfall            |
     | (Wake-Up durch bestimmte Eingabe) | Wake-Up bei Event             |
-    | Fester Programmablauf             | Ablauf häbngt von Event ab    |
+    | Fester Programmablauf             | Ablauf hängt von Event ab     |
     | Bsp.: Billet und Selecta Automat  | Bsp.: Typische GUI-Anwendung  |
 
 * Sie können das Zusammenspiel zwischen Event-Quelle und Event-Listener erklären. 
