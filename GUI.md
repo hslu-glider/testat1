@@ -9,7 +9,7 @@
 
 * Sie können prinzipiell den Aufbau eines GUI erklären.
 
-    GUIs bestehen aus drei Grundlegenden Systemkomponenten 
+    GUIs bestehen aus drei grundlegenden Systemkomponenten 
     * elementare GUI Komponenten (Label, Button usw.)
     * Container (unsichtbare wie Panel und sichtbare wie Frame)
     * Layout-Manager (dieser arrangiert Container-Inhalte z.B. Buttons)
@@ -26,7 +26,7 @@
     |-----------------------------------|-------------------------------|
     | Aneinanderreihung von Anweisungen | Idle im Normalfall            |
     | (Wake-Up durch bestimmte Eingabe) | Wake-Up bei Event             |
-    | Fester Programmablauf             | Ablauf häbngt von Event ab    |
+    | Fester Programmablauf             | Ablauf hängt von Event ab     |
     | Bsp.: Billet und Selecta Automat  | Bsp.: Typische GUI-Anwendung  |
 
 * Sie können das Zusammenspiel zwischen Event-Quelle und Event-Listener erklären. 
@@ -57,31 +57,42 @@
     Calculator.java
 
             public class Calculator extends Frame implements WindowListener {
+                    // create buttons
                     Button btn_Start = new Button("Start");
                     Button btn_End = new Button("End");
                     ...
+                    // create a Panel with a GridLayout 
                     GridLayout gl = new GridLayout(5, 4);
                     Panel keyboard = new Panel(gl);
                     ...
                     public Calculator(){
+                        // declare the title of the GUI
                         super("hslu-gliders' GUI");
                         ...
+                        // set graphical attributes
                         setSize(HEIGTH, LENGTH);
                         setResizable(false);
                         ...
                         setLayout(new BorderLayout());
                         ...
+                        // add buttons to the panel
                         keyboard.add(btn_Start);
                         keyboard.add(btn_End);
                         ...
+                        // add the panel to the center of the application 
                         add(keyboard, BorderLayout.CENTER);
                         ...
+                        // activate the eventlistener
                         addWindowListener(this);
                         ...
+                        // create a buttonlistener
                         ButtonListener bl = new ButtonListener(this);
+                        ...
+                        // add buttons to the buttonlistener
                         btn_Start.addActionListener(bl);
                         btn_End.addActionListener(bl);
                         ...
+                        // show the GUI
                         setVisible(true);
                             
 
@@ -91,18 +102,20 @@
                 private Calculator gui;
                 private Computer cp = new Computer();
 
+                // activate the buttonlistener for the GUI
                 public ButtonListener(Calculator gui){
                     this.gui = gui;
                 }
 
+                // handle buttonevents
                 public void actionPerformed(ActionEvent event){
                 if(event.getSource() == gui.btn_Start){
                     cp.doStart();
                 }
-                ...
                 if(event.getSource() == gui.btn_End){
                     cp.doEnd();
                 }
+                ...
    
 * Sie kennen Vor - und Nachteile von Swing und wissen, wie man graphische User-Interfaces mit Swing erzeugt.
 
