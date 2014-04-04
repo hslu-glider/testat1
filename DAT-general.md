@@ -203,8 +203,29 @@
     * Typsicherheit ist garantiert
 
 * Sie können erklären, wie die Stack (Stapel) Datenstruktur funktioniert. 
+
+    * Stack ist eine LIFO-Datenstruktur (*last in, first out*). 
+    * Der englische Begriff *Stack* (Stapel) kann wörtlich vertanden werden denn das Element, 
+      welches zuletzt auf den Stapel gelegt wurde wird als erstes behandelt.
+
 * Sie können erklären, wie die Queue (Warteschlange) Datenstruktur funktioniert. 
+
+    * Queue ist eine FIFO-Datenstruktur (*first in, first out*)
+    * Der englische Begriff *Queue* (Schlange) kann wörtlich verstanden werden als *Warte*schlange, 
+      denn das Element, welches als letzes in die Schlange kommt, wird auch als letztes behandelt. 
+
 * Sie können eine Queue und einen Stack implementieren. 
+
+    **TODO**
+
 * Sie kennen Anwendungen für die Datenstrukturen Stack und Queue. 
+
+    **TODO**
+
 * Sie können die Funktionsweise und den Einsatz von doppelt verketteten Listen erläutern. 
+
+    **TODO**
+
 * Sie können Einfügen und Löschen in einer doppelt verketteten Liste mit einer Skizze detailliert erläutern. 
+
+    **TODO**
