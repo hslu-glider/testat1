@@ -12,9 +12,9 @@
         * grösstes Element
         * ...
  
-    * Zugriffsaufwand "Big O von n --- O(n)"
-        * Einfügen in unsortiertes Array hat "O(1)"
-        * Entfernen aus unsortiertem Array hat "O(n)"
+    * Zugriffsaufwand *Big O Notation*
+        * Einfügen in unsortiertes Array hat *O(1)*
+        * Entfernen aus unsortiertem Array hat *O(n)*
         * ...
 
     * statisch vs dynamisch
