@@ -96,7 +96,6 @@
 * Sie können Einfach - und Mehrfachvererbung erläutern und können diese im Klassendiagramm darstellen.
 
 	* Vererbung
-            
             Wie bereits bekannt, erben Unterklassen Methoden und Variabeln von 
             der Oberklasse und werden mit extends deklariert.
             Java erlaubt jedoch keine Mehrfachvererbung von Klassen (heisst eine
