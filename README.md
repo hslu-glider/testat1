@@ -1,4 +1,4 @@
-# Objektorientierte Programmierung
+# Lernziele PRG2 - Testat 1
 Hier sind die Lernziele aufgelistet mit kurzen Kommentaren dazu.
 
 * [Java](JAVA.md)
