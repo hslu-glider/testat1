@@ -104,7 +104,7 @@
     Eine einfache (einfach verkettete) Liste besteht aus **nodes** welche Daten und einen Pointer zur
     nächsten node enthalten.
 
-    ![alt text][linked-list.png "linked list"]
+    ![alt text](linked-list.png "linked list")
  
 * Sie können eine einfache Liste selber implementieren. 
 
