@@ -1,8 +1,18 @@
 # Datenstrukturen - general
 * Sie können mindestens 4 Eigenschaften von Datenstrukturen benennen und erklären.
 
-    * Zugriffsmöglichkeiten (Elementare Zugriffsmöglichkeit, Zugriffe über eine Ordnung) 
-    * Zugriffsaufwand (Zugriffsaufwand in Abhängigkeit zu der Anzahl Elementen) 
+    * Zugriffsmöglichkeiten (allgemein)
+        * Einfügen
+        * Entfernen
+        * Suchen
+
+    * Zugriffsmöglichkeiten (bezüglich Ordnung, d.h. Grösse, Priorität usw.)
+        * nachfolgendes Element
+        * vorangehendes Element
+        * grösstes Element
+        * ...
+ 
+    * Zugriffsaufwand 
     * statisch vs dynamisch (statisch = fixe Grösse, dynamisch = keine fixe Grösse) 
     * explizit vs implizit (explizit: Zugriff über Referenz, implizit: Zugriff ) 
     * direkt vs indirekt (direkt: Jedes Element direkt erreichbar, indirekt: Elemente teilweise über andere Elemente erreichbar)
