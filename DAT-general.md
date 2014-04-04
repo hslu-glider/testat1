@@ -140,7 +140,59 @@
                     return next;
                 }
 
-            } 
+            }
+
+    LinkedList.java
+
+            public class LinkedList{
+                private Node head;      // the fixed root of the list
+
+                public LinkedList(){
+                    head = null;
+                }
+
+                public boolean isEmpty(){
+                    return (head == null);
+                }
+
+                public void insert(String d){
+                    head = new Node(head, d);
+                }
+
+                public boolean has(String d){
+                    Node current = head;
+                    
+                    while( (current != null) && !d.equals(current.getData()) ){
+                        current = current.getNext();
+                    }
+                    
+                    if(current == null){
+                         return false;
+                    }
+                    else{
+                        return true;
+                    }
+                }
+
+                public void remove(String d){
+                    Node current = head;
+                    Node previous = null;
+                    
+                    while( (current != null) && !d.equals(current.getData()) ){
+                        previous = current;
+                        current = previous.getNext();
+                    }
+
+                    if(current != null){
+                        if(current == head){
+                            head = current.getNext();
+                        }
+                        else{
+                            previous.setNext(current.getNext());
+                        }
+                    }
+                }
+            }
 
 * Sie können begründen, weshalb Generics insbesondere bei Datenstrukturen vorteilhaft sind.
 * Sie können erklären, wie die Stack (Stapel) Datenstruktur funktioniert. 
