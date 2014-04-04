@@ -115,16 +115,16 @@
 
     Node.java
 
-            public class Node{
-                private String data;    // the data is of type String in this example
-                private Node next;      // pointer to the next node in the list
+            public class Node<T>{
+                private T data;         // the data is of 'any type' T in this example
+                private Node<T> next;      // pointer to the next node in the list
                 
-                public Node(Node n, String d){
+                public Node(Node<T> n, T d){
                     next = n;
                     data = d;
                 }
 
-                public void setData(String d){
+                public void setData(T d){
                     data = d;
                 }
 
@@ -132,7 +132,7 @@
                     return data;
                 }
 
-                public void setNext(Node n){
+                public void setNext(Node<T> n){
                     next = n;
                 }
 
@@ -144,8 +144,8 @@
 
     LinkedList.java
 
-            public class LinkedList{
-                private Node head;      // the fixed root of the list
+            public class LinkedList<T>{
+                private Node<T> head;      // the fixed root of the list
 
                 public LinkedList(){
                     head = null;
@@ -155,12 +155,12 @@
                     return (head == null);
                 }
 
-                public void insert(String d){
+                public void insert(T d){
                     head = new Node(head, d);
                 }
 
-                public boolean has(String d){
-                    Node current = head;
+                public boolean has(T d){
+                    Node<T> current = head;
                     
                     while( (current != null) && !d.equals(current.getData()) ){
                         current = current.getNext();
@@ -174,9 +174,9 @@
                     }
                 }
 
-                public void remove(String d){
-                    Node current = head;
-                    Node previous = null;
+                public void remove(T d){
+                    Node<T> current = head;
+                    Node<T> previous = null;
                     
                     while( (current != null) && !d.equals(current.getData()) ){
                         previous = current;
@@ -195,6 +195,13 @@
             }
 
 * Sie können begründen, weshalb Generics insbesondere bei Datenstrukturen vorteilhaft sind.
+
+    Generics erlauben es eine Klasse für verschiedene Datentypen zu erstellen.
+    Dies hat folgende Vorteile
+    
+    * Code-Duplikationen werden automatisch vermieden 
+    * Typsicherheit ist garantiert
+
 * Sie können erklären, wie die Stack (Stapel) Datenstruktur funktioniert. 
 * Sie können erklären, wie die Queue (Warteschlange) Datenstruktur funktioniert. 
 * Sie können eine Queue und einen Stack implementieren. 
