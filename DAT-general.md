@@ -12,10 +12,33 @@
         * grösstes Element
         * ...
  
-    * Zugriffsaufwand 
-    * statisch vs dynamisch (statisch = fixe Grösse, dynamisch = keine fixe Grösse) 
-    * explizit vs implizit (explizit: Zugriff über Referenz, implizit: Zugriff ) 
-    * direkt vs indirekt (direkt: Jedes Element direkt erreichbar, indirekt: Elemente teilweise über andere Elemente erreichbar)
+    * Zugriffsaufwand "Big O von n --- O(n)"
+        * Einfügen in unsortiertes Array hat "O(1)"
+        * Entfernen aus unsortiertem Array hat "O(n)"
+        * ...
+
+    * statisch vs dynamisch
+
+        | statisch                      | dynamisch                         |
+        |-------------------------------|-----------------------------------|
+        | fixe Grösse                   | keine fixe Grösse                 |
+        | vor dem Kompilieren fixiert   | Grösse variiert während Laufzeit  |
+        | Bsp.: Array                   | Bsp.: ArrayList                   |
+         
+    * explizite vs. implizite Datenstrukturen
+
+        | explizit                      | implizit                          |
+        |-------------------------------|-----------------------------------|
+        | Beziehungen mit Referenzen    | Beziehungen mit Formeln           |
+        | Bsp.: List, Baum              | Bsp.: Array, Heap                 |
+     
+    * direkter vs indirekter Zugriff
+
+        | direkt                        | indirekt                          |
+        |-------------------------------|-----------------------------------|
+        | unmittelbarer Zugriff         | kein direkter Zugriff             |
+        | Technik: Index                | Technik: Iterator                 |
+        | Bsp.: Array                   | Bsp.: Set                         |
 
 * Sie können an einem Beispiel die gegenseitige Abhängigkeit von Algorithmus und Datenstruktur aufzeigen. 
 * Sie können für Array und Liste den Aufwand für die elementaren Zugriffsoperationen angeben. 
