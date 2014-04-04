@@ -99,8 +99,15 @@
     | Liste unsoertiert | *O(1)*    | *O(n)*    | *O(n)*    | nein          | nein      | nein              |
     | Liste sortiert    | *O(n)*    | *O(n)*    | *O(n)*    | ja            | nein      | ja                |
  
-* Sie können die Implementierung einer einfachen Liste im Detail verstehen und illustrieren. 
+* Sie können die Implementierung einer einfachen Liste im Detail verstehen und illustrieren.
+
+    Eine einfache (einfach verkettete) Liste besteht aus **nodes** welche Daten und einen Pointer zur
+    nächsten node enthalten.
+
+    ![alt text][linked-list.png "linked list"]
+ 
 * Sie können eine einfache Liste selber implementieren. 
+
 * Sie können begründen, weshalb Generics insbesondere bei Datenstrukturen vorteilhaft sind.
 * Sie können erklären, wie die Stack (Stapel) Datenstruktur funktioniert. 
 * Sie können erklären, wie die Queue (Warteschlange) Datenstruktur funktioniert. 
