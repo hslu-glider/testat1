@@ -120,9 +120,9 @@
 	
 * Sie kennen Kriterien des modularen Entwurfs.
 
-    * 
+    * ?
 
 * Sie kennen die Prinzipien des modularen Entwurfs.
 
-    * 
+    * ?
 
