@@ -52,7 +52,14 @@
 
 * Sie können bestimmen, welche Implementation für einen bestimmten Methodenaufruf zur Ausführung gelangt.
 	
-	
+    * Stichwort Überladung von Konstruktoren und Methoden.
+        
+        Es gilt, sobald ein Konstruktor oder Methodenkopf auf dei Eingabe passt
+        wird er ausgeführt. Dabei werden zuerst die Unterklassen durchsucht und 
+        danach in aufsteigender Reihenfolge die übergeordneten Klassen.
+        Siehe Beispiele "Überschreibung" im darauffolgenden Block.
+        
+
 * Sie können Polymorphie, d.h. Überladen und Überschreiben mittels Java - Code erklären und anwenden.
 	
 	* Überladung
@@ -88,7 +95,36 @@
 
 * Sie können Einfach - und Mehrfachvererbung erläutern und können diese im Klassendiagramm darstellen.
 
-	*  
+	* Vererbung
+            
+         Wie bereits bekannt, erben Unterklassen Methoden und Variabeln von 
+         der Oberklasse und werden mit extends deklariert.
+         Java erlaubt jedoch keine Mehrfachvererbung von Klassen (heisst eine
+         Klasse erbt von mehrern überklassen). Jedoch erlaubt Java die 
+         Mehrfachvererbung von Interfaces, welche mit implements in die Klasse
+         integriert werden. (siehe OOP3)
+
+
+                    public interface Drawable3
+                    {
+                        void draw();
+                        void resize(int value);
+                    }
+                    public class House implements Drawable3
+                    {
+                        // instance variables
+                        public House() {...}
+                        public void draw() {...}
+                        public void resize(int value){...}
+                        // 
+                    }
+       
 	
 * Sie kennen Kriterien des modularen Entwurfs.
+
+    * ?
+
 * Sie kennen die Prinzipien des modularen Entwurfs.
+
+    * ?
+
