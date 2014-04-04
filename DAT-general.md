@@ -110,8 +110,8 @@
 
     Um eine einfach verkettete List zu implementieren braucht es 
 
-        * eine Klasse für die nodes
-        * eine Klasse für die Liste
+    * eine Klasse für die nodes
+    * eine Klasse für die Liste
 
     Node.java
 
