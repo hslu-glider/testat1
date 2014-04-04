@@ -92,9 +92,9 @@
  
 * Sie können für Array und Liste den Aufwand für die elementaren Zugriffsoperationen angeben.
 
-    | Datenstruktur || Einfügen | Suchen    | Entfernen | Nachfolger    | Vorgänger | sortierte Ausgabe |
-    |---------------||----------|-----------|-----------|---------------|-----------|-------------------| 
-    | testing       ||          |           |           |               |           |                   |
+    | Datenstruktur | Einfügen | Suchen    | Entfernen | Nachfolger    | Vorgänger | sortierte Ausgabe |
+    |-------------- |----------|-----------|-----------|---------------|-----------|-------------------| 
+    | testing       |          |           |           |               |           |                   |
  
 * Sie können die Implementierung einer einfachen Liste im Detail verstehen und illustrieren. 
 * Sie können eine einfache Liste selber implementieren. 
