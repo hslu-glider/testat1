@@ -109,6 +109,7 @@
 * Sie können eine einfache Liste selber implementieren.
 
     Um eine einfach verkettete List zu implementieren braucht es 
+
         * eine Klasse für die nodes
         * eine Klasse für die Liste
 
