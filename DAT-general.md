@@ -106,7 +106,40 @@
 
     ![alt text](linked-list.png "linked list")
  
-* Sie können eine einfache Liste selber implementieren. 
+* Sie können eine einfache Liste selber implementieren.
+
+    Um eine einfach verkettete List zu implementieren braucht es 
+        * eine Klasse für die nodes
+        * eine Klasse für die Liste
+
+    Node.java
+
+            public class Node{
+                private String data;    // the data is of type String in this example
+                private Node next;      // pointer to the next node in the list
+                
+                public Node(Node n, String d){
+                    next = n;
+                    data = d;
+                }
+
+                public void setData(String d){
+                    data = d;
+                }
+
+                public String getData(){
+                    return data;
+                }
+
+                public void setNext(Node n){
+                    next = n;
+                }
+
+                public Node getNext(){
+                    return next;
+                }
+
+            } 
 
 * Sie können begründen, weshalb Generics insbesondere bei Datenstrukturen vorteilhaft sind.
 * Sie können erklären, wie die Stack (Stapel) Datenstruktur funktioniert. 
