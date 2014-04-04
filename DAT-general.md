@@ -90,7 +90,12 @@
     | 100000    | too long/stack overflow   | 3952 ticks    |
       
  
-* Sie können für Array und Liste den Aufwand für die elementaren Zugriffsoperationen angeben. 
+* Sie können für Array und Liste den Aufwand für die elementaren Zugriffsoperationen angeben.
+
+    | Datenstruktur || Einfügen | Suchen    | Entfernen | Nachfolger    | Vorgänger | sortierte Ausgabe |
+    |---------------||----------|-----------|-----------|---------------|-----------|-------------------| 
+    | testing       ||          |           |           |               |           |                   |
+ 
 * Sie können die Implementierung einer einfachen Liste im Detail verstehen und illustrieren. 
 * Sie können eine einfache Liste selber implementieren. 
 * Sie können begründen, weshalb Generics insbesondere bei Datenstrukturen vorteilhaft sind.
