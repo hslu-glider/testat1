@@ -39,8 +39,45 @@
 		* Nicht sortiert 
 		
 * Sie können die 3 Punkte des hashCode() - Contractes erläutern 
+
+	1. Bestimmte Programmausführung und bestimmtes Objekt -> immer derselbe Rückgabewert.
+	2. Zwei gleiche Objekte im Sinne von equals() -> dieselben Rückgabewerte
+	3. Zwie ungleiche Objekte im sinne von equals() -> nicht zwingend verschiene Rückgabewerte (idealerweise jedoch schon)
+	
 * Sie können die Methode hashCode() für einfache Fälle implementieren.
+
+	Um Hascode zu verwenden muss equals() auf Identität überprüfen. hashCode() muss hingegen so programmiert sein, dass sie die Adresse des Objekts als rückgabewert liefert.
+	
+			public int hashCode()
+			{
+				return text.hashCode(); // hashCode() von String wird aufgerufen
+			}						// (siehe auch nächste Seite)
+			
+			public String toString()
+			{
+				return text;
+			}
+			public static void main(String[] args)
+			{
+				Balloon b1 = new Balloon("Hochschule Luzern");
+				Balloon b2 = new Balloon("Hochschule Luzern");
+				Balloon b3 = new Balloon("Modul Programmieren 2");
+				...
+				Set<Balloon> set = new HashSet<Balloon> (); // Ballone in HashSet einf.
+				set.add(b1);
+				set.add(b2);
+				set.add(b3);
+				set.add(b1);
+				for(Balloon b : set){
+					System.out.println(b);
+				}
+			}	
+	
 * Sie können den Collection - Begriff erläutern und mindestens zwei Vorteile nennen, die der Einsatz des Java Collections Frameworks mit sich bringt. 
+
+	Eince Collection, auch Container genannt, ist ein Objekt das viele Elemente aufnehemn kann, wie z.B. ArrayList, HahsSet oder OriorityQueue.
+	Diese Objekte haben meist einen sehr geringen programieraufwand, sind schnell und gut, fördent die Weiderverwendung im Code und vereinfacht die Zusammenarbeit zwischen den Datenstrukturen.	
+
 * Sie kennen die Klassenstruktur der Java Collection Interfaces und können diese nutzen. 
 * Sie kennen die verschiedenen Collection Views auf eine Map. 
 * Sie können für ein gegebenes Problem die geeignete Collection - Klasse auswählen 
