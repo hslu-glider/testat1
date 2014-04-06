@@ -1,5 +1,10 @@
 # Datenstrukturen - methods
 * Sie können einen AVL Baum definieren. 
+
+	 Ein AVL - Baum ist dann gegeben wenn Die Teilbäume des Suchbaumesausgehend von jedem knoten nicht weiter auseinander sind als 1.
+	 Der Balancefaktor beschreibt die umstände im jeweiligen knoten mittels bal(v)= Höhhe rechten Teilbaum von v - Höhhe linker Teilbaum von v.
+	 
+
 * Sie kennen 3 verschiedene Betrachtungsweisen für Gleichheit und können je ein konkretes Beispiel dazu erläutern. 
 	
 	* Gleiche Werte
@@ -79,9 +84,38 @@
 	Diese Objekte haben meist einen sehr geringen programieraufwand, sind schnell und gut, fördent die Weiderverwendung im Code und vereinfacht die Zusammenarbeit zwischen den Datenstrukturen.	
 
 * Sie kennen die Klassenstruktur der Java Collection Interfaces und können diese nutzen. 
+
+		int size();
+		boolean isEmpty();
+		boolean contains(Objecto);
+		Iterator<E> iterator();
+		Object[] toArray();
+		<T> T[] toArray(T[] a);
+		boolean add(E o);
+		boolean remove(Object o);
+		boolean containsAll(Collection<?> c);
+		boolean addAll(Collection<? extends E> c);
+		boolean removeAll(Collection <?> c);
+		boolean retainAll(Collection <?> c);
+		void clear();
+		boolean equals(Object o);
+		int hashCode();
+
 * Sie kennen die verschiedenen Collection Views auf eine Map. 
+
+		Set<K> keySet();
+		Collection<V> values();
+		Set<Map.Entry<K,V>>	entrySet();
+
 * Sie können für ein gegebenes Problem die geeignete Collection - Klasse auswählen 
 
+	* HashMap für nicht geordnete objekte mit Schlüssel
+	* HashSet für nicht geordnete objekte ohne duplikate
+	* TreeMap für intern geordnete objekte mit Schlüssel
+	* TreeSet für intern geordnete objekte ohne Schlüssel	
+	* Arraylist für Objekte ohne Schlüssel die nicht intern geordnet sind und nicht oft geändert werden.
+	* Arraylist für Objekte ohne Schlüssel die nicht intern geordnet sind und nicht geändert werden.
+	
 * Zusätzliches:
 		* equals()
 	
