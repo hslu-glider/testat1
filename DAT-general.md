@@ -115,84 +115,110 @@
 
     Node.java
 
-            public class Node<T>{
-                private T data;         // the data is of 'any type' T in this example
-                private Node<T> next;      // pointer to the next node in the list
+            package linkedlist;
+            
+            public class Node <T> {
                 
-                public Node(Node<T> n, T d){
-                    next = n;
-                    data = d;
-                }
-
-                public void setData(T d){
-                    data = d;
-                }
-
-                public String getData(){
-                    return data;
-                }
-
-                public void setNext(Node<T> n){
-                    next = n;
-                }
-
-                public Node getNext(){
-                    return next;
-                }
-
+                    private Node next = null;
+                    private Node previous = null;
+                
+                    private T data = null;
+                
+                    public Node(T d){
+                            data = d;
+                    }
+                
+                    public Node(Node<T> n, Node<T> p, T d){
+                            next = n;
+                            previous = p;
+                            data = d;
+                    }
+                
+                    public void setNext(Node<T> n){
+                            next = n;
+                    }
+                
+                    public Node<T> getNext(){
+                            return next;
+                    }
+                
+                    public void setPrevious(Node<T> p){
+                            previous = p;
+                    }
+                
+                    public Node<T> getPrevious(){
+                            return previous;
+                    }
+                
+                    public void setData(T d){
+                            data = d;
+                    }
+                
+                    public T getData(){
+                            return data;
+                    }
+                
             }
 
     LinkedList.java
 
-            public class LinkedList<T>{
-                private Node<T> head;      // the fixed root of the list
-
-                public LinkedList(){
-                    head = null;
-                }
-
-                public boolean isEmpty(){
-                    return (head == null);
-                }
-
-                public void insert(T d){
-                    head = new Node(head, d);
-                }
-
-                public boolean has(T d){
-                    Node<T> current = head;
-                    
-                    while( (current != null) && !d.equals(current.getData()) ){
-                        current = current.getNext();
-                    }
-                    
-                    if(current == null){
-                         return false;
-                    }
-                    else{
-                        return true;
-                    }
-                }
-
-                public void remove(T d){
-                    Node<T> current = head;
-                    Node<T> previous = null;
-                    
-                    while( (current != null) && !d.equals(current.getData()) ){
-                        previous = current;
-                        current = previous.getNext();
-                    }
-
-                    if(current != null){
-                        if(current == head){
-                            head = current.getNext();
-                        }
-                        else{
-                            previous.setNext(current.getNext());
-                        }
-                    }
-                }
-            }
+			package linkedlist;
+			
+			public class LinkedList <T> {
+			    
+			        private Node head;
+			        private Node tail;
+			        private Node current;
+			    
+			        public LinkedList(){
+			            head = null;
+			            tail = null;
+			            current = null;
+			        }
+			    
+			        public void insertAtHead(Object obj){
+			                if(head == null){   // the list is empty
+			                        Node nn = new Node(obj);
+			                        nn.setNext(null);
+			                        nn.setPrevious(null);
+			                        head = nn;
+			                        tail = nn;
+			                }
+			                else{               // the list isn't empty
+			                        Node nn = new Node(obj);
+			                        nn.setNext(null);
+			                        nn.setPrevious(head);
+			                        head.setNext(nn); 
+			                        head = nn;
+			                }
+			        }
+			    
+			        public void insertAtEnd(Object obj){
+			                if(head == null){   // the lsit is empty
+			                        Node nn = new Node(obj);
+			                        nn.setNext(null);
+			                        nn.setPrevious(null);
+			                        head = nn;
+			                        tail = nn;
+			                }
+			                else{               // the list isn't empty
+			                        Node nn = new Node(obj);
+			                        nn.setNext(tail);
+			                        nn.setPrevious(null);
+			                        tail.setPrevious(nn);
+			                        tail = nn;
+			                }
+			        }
+			    
+			        public void printList(){
+			                Node ptr = tail;
+			                while(ptr != null){
+			                        System.out.println(ptr.getData());
+			                        ptr = ptr.getNext();
+			                }
+			        }
+			    
+			}
 
 * Sie können begründen, weshalb Generics insbesondere bei Datenstrukturen vorteilhaft sind.
 
