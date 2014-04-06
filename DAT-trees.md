@@ -2,15 +2,18 @@
 * Sie können einen Baum definieren. Sie können den Grad und die Höhe eines Baumes und das Niveau eines Knotens bestimmen. 
 	*	Definition eines Baumes:
 	
-			//Da in der Dokumentation teilweise unschön übersetzt wird, habe ich hier die englischen Schlüsselwörter verwendet.
-			Ein tree besteht aus nodes welche untereinander mit edges verbunden sind.
-			Besitzt ein tree keine nodes so ist er leer.
-			Wenn der tree, nodes besitzt so können diese vom Typ root, inner node oder leaf sein.
-			Root bezeichnet dabei den ursprungs node
-			Inner nodes sind nodes welche mindestens ein child node besitzen.
-			leaf ist ein node welche keine child nodes hat.
-			Ist ein node nach unten über edges mit anderen nodes verbunden, so sind diese unteren nodes die child's des höhergestellten node.
-			Der höher gestellte node wird auch parent genannt.
+			//Da in der Dokumentation teilweise unschön übersetzt wird, 
+			//habe ich hier die englischen Schlüsselwörter verwendet.
+			
+			- Ein tree besteht aus nodes welche untereinander mit edges verbunden sind.
+			- Besitzt ein tree keine nodes so ist er leer.
+			- Wenn der tree, nodes besitzt so können diese vom Typ root, inner node oder leaf sein.
+			- Root bezeichnet dabei den ursprungs node
+			- inner nodes sind nodes welche mindestens ein child node besitzen.
+			- leaf ist ein node welche keine child nodes hat.
+			- Ist ein node nach unten über edges mit anderen nodes verbunden, 
+			  so sind diese unteren nodes die child's des höhergestellten node.
+			- Der höher gestellte node wird auch parent genannt.
 			
 	* Die order (Ordnung) und degree (Grad):
 	
