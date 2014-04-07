@@ -7,3 +7,4 @@ Hier sind die Lernziele aufgelistet mit kurzen Kommentaren dazu.
 * [Datenstrukturen Allgemeines](DAT-general.md) 
 * [Datenstrukturen Bäume](DAT-trees.md)
 * [Datenstrukturen Methoden](DAT-methods.md)
+* [BinarySearchTree mit Inorder Ausgabe] (BinarySearchTree.md)
