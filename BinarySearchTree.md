@@ -40,7 +40,7 @@
 			}
 
 			/**
-			* setter Methode für den Schl�ssel
+			* setter Methode für den Schlüssel
 			*
 			* @param value der neue Schlüsselwert
 			*/
@@ -177,11 +177,11 @@
 			* mit Wurzel root mit dem Schlüsselwert 10: root = delete(root, 10);
 			*
 			* @param node Wurzel des Baumes
-			* @param Schl�sselwert, den der neue Knoten haben soll
+			* @param Schlüsselwert, den der neue Knoten haben soll
 			* @return die neue Wurzel des Baumes.
 			*/
 			// Als Additum kann auch das Löschen implementiert werden
-			// als //# taucht immer die Zeile des Pseudocodes in der Musterl�sung des Leitprogramms auf
+			// als //# taucht immer die Zeile des Pseudocodes in der Musterlösung des Leitprogramms auf
 			public BinSearchTree delete(BinSearchTree node, int key) 
 			{
 				// Wäre noch zu implementieren, nicht erledigt
