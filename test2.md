@@ -93,7 +93,103 @@ public class BRTComperator implements Comparator<CargoShip> {
 |  | 21 (61 löst aus) |
 |  | nicht möglich |
 |  | 47 |
-  
+
+# Aufgabe 5
+
+## a)
+
+den der Klasse Person
+
+## b) 
+
+den des Objekts uniqueID
+
+## c)
+
+den des aktuellen Objekts (this)
+
+## d) 
+
+niemand (Syntaxfehler - nur Objekte können locks stellen)
+
+
+# Aufgabe 6
+
+```java
+...
+	private Thread thread;
+	
+	public void start() {
+		if(thread == null){
+			thread = new Thread(this);
+			thread.start();
+		}
+	}
+```
+
+Tipp: Wie erzeugt man Threads
+
+  * implements Runnable
+    * Untervariante 1
+    * Untervariante 2
+  * extends Thread
+
+# Aufgabe 7
+
+## a) 
+
+Drei Varianten:
+  * normale benannte äussere Klasse
+  * benannte innere Klasse
+  * anonyme innere Klasse
+
+Die vorliegende Variante ist die anonyme innere Klasse auf Zeile 31-36
+
+Das Event heisst ChangeEvent
+
+## b)
+
+Zeile 43
+
+## c)
+
+Zeile 42
+
+## d)
+
+Zeile 25 
+
+## e)
+
+BorderLayout
+
+# Aufgabe 8
+
+## a)
+
+bedient einen Client nach dem anderen
+
+Der TimeServer ist blockierend, d.h. er kann nur einen Client nach dem 
+anderen bedienen. Weitere Clients können zwar Kontekt aufnehmen, erhalten 
+aber kein Datum und keine Zeit.
+
+## b)
+
+Zeile 12-18 als Thread ausführen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
