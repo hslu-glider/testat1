@@ -4,12 +4,12 @@
 ```java
 Public StackFullException(String s) extends Exception
 {
-	Super(„Stack full –„ +s);
+	Super("Stack full –" + s);
 }
 
 Public StackEmptyException(String s) extends RuntimeException
 {
-	Super(„Stack full –„ +s);
+	Super("Stack full –" +s);
 }
 ```
 
