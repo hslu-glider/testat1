@@ -177,7 +177,45 @@ aber kein Datum und keine Zeit.
 
 Zeile 12-18 als Thread ausführen
 
+## c)
 
+Die genaue Port-Nummer ist egal, sollte aber grösser als 1023 sein
+
+
+## d)
+
+Grösse der Warteschlange (backlog) für anstehende Clients wird definiert
+
+## e)
+
+Der Port ist bereits durch einen anderen Server belegt
+
+## f)
+
+telnet localhost port
+
+## g)
+
+Nichts (nach dem Verbindungsaufabau erhält man sofort den Datum+Zeit String)
+
+## h)
+
+Nur als localhost
+
+## i)
+
+```java
+new Socket(host, port);
+```
+
+# Aufgabe 9
+
+  * 2
+  * 4
+  * 1
+  * 6
+  * 3
+  * 5
 
 
 
