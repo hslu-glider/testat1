@@ -41,7 +41,7 @@ public void push(T o) throws StackFullException{
 ```java
 try{
 	s.push(7);
-} catch (StackFullException){
+} catch (StackFullException e){
 	e.printStackTrace();
 }
 ```
