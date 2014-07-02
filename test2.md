@@ -22,7 +22,7 @@ public class StackEmptyException extends Exception
 
 ## b)
 ```java
-public Stack(int size) throw IllegalArgumentException
+public Stack(int size) throws IllegalArgumentException
 ...
 		throw new IllegalArgumentException("Illegal Argument - size: " + size);
 ```
