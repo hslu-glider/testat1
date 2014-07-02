@@ -2,14 +2,21 @@
 
 ## a)
 ```java
-Public StackFullException(String s) extends Exception
+public class StackFullException extends Exception
 {
-	Super("Stack full –" + s);
+	public StackFullException(String s) 
+	{
+		super("Stack full " + s);
+	}
 }
 
-Public StackEmptyException(String s) extends RuntimeException
+
+public class StackEmptyException extends Exception
 {
-	Super("Stack full –" +s);
+	public StackEmptyException(String s) 
+	{
+		super("Stack empty " + s);
+	}
 }
 ```
 
